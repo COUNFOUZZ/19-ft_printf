@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_search_tc.c                                     :+:      :+:    :+:   */
+/*   ft_is_int.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/01 15:36:20 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/02 18:07:54 by aabda            ###   ########.fr       */
+/*   Created: 2022/08/02 17:24:34 by aabda             #+#    #+#             */
+/*   Updated: 2022/08/02 18:26:06 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int	ft_search_tc(const char *format, va_list arg)
+int	ft_is_int(va_list arg)
 {
-	int	i;
+	int	nb;
 	int	count;
 
-	i = 0;
-	count = 0;
-	if (format && format[i + 1] == 's')
-		count += ft_is_string(arg);
-	if (format && format[i + 1] == 'c')
-		count += ft_is_char(arg);
-	if (format && format[i + 1] == 'd')
-		count += ft_is_int(arg);
+	if (!arg)
+		return (0);
+	nb = va_arg(arg, int);
+	count = ft_count_int(nb);
+	ft_putnbr_fd(nb, 1);
 	return (count);
 }
