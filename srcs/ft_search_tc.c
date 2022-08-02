@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 15:36:20 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/02 18:07:54 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/02 21:31:30 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,9 @@ int	ft_search_tc(const char *format, va_list arg)
 		count += ft_is_char(arg);
 	if (format && format[i + 1] == 'd')
 		count += ft_is_int(arg);
+	if (format && format[i + 1] == 'i')
+		count += ft_is_int(arg);
+	if (format && format[i + 1] == '%')
+		count += ft_is_percent(arg);
 	return (count);
 }
