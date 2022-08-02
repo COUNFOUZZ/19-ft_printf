@@ -6,17 +6,17 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 17:48:19 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/01 18:06:37 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/02 17:26:05 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-int	ft_is_char(const char *format, va_list arg)
+int	ft_is_char(va_list arg)
 {
 	char	c;
 
-	if (!format || !arg)
+	if (!arg)
 		return (0);
 	c = va_arg(arg, int);
 	ft_putchar_fd(c, 1);
