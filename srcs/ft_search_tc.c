@@ -6,11 +6,11 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 15:36:20 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 18:38:52 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 19:43:35 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../includes/ft_printf.h"
 
 int	ft_search_tc(const char *format, va_list arg)
 {
@@ -27,6 +27,8 @@ int	ft_search_tc(const char *format, va_list arg)
 		count += ft_is_int(arg);
 	if (format && (format[i + 1] == 'x' || format[i + 1] == 'X'))
 		count += ft_is_hex(format[i + 1], arg);
+	if (format && format[i + 1] == 'p')
+		count += ft_is_pointer(arg);
 	if (format && format[i + 1] == '%')
 		count += ft_is_percent(arg);
 	return (count);
