@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 18:08:26 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 18:38:51 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 19:01:54 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	ft_is_hex(const char format, va_list arg)
 {
-	int	nb;
-	int	count;
+	unsigned int	nb;
+	int				count;
 
 	if (!arg)
 		return (0);
-	nb = va_arg(arg, int);
+	nb = va_arg(arg, unsigned int);
 	count = ft_count_hex(nb);
 	ft_putnbr_hex_fd(format, nb, 1);
 	return (count);
