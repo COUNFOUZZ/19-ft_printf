@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 17:43:33 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 19:52:01 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 19:56:16 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,6 @@ void	ft_putnbr_hex_pointer_fd(unsigned long n, int fd)
 		if (n <= 9)
 			ft_putchar_fd(n + '0', fd);
 		else
-			t_putchar_fd(n % 10 + 'a', fd);
+			ft_putchar_fd(n % 10 + 'a', fd);
 	}
 }
