@@ -6,11 +6,11 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 17:43:33 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 18:26:43 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 18:38:52 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

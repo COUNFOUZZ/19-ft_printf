@@ -6,11 +6,11 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 18:20:03 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 18:25:43 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 18:38:39 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_count_int(int nb)
 {

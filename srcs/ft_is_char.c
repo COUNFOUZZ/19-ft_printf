@@ -6,11 +6,11 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 17:48:19 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/02 17:26:05 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 18:38:43 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_is_char(va_list arg)
 {

@@ -6,11 +6,11 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 15:34:40 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/01 18:25:40 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 18:38:53 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_printf(const char *format, ...)
 {

@@ -6,11 +6,11 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 15:36:20 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 18:15:53 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 18:38:52 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_search_tc(const char *format, va_list arg)
 {

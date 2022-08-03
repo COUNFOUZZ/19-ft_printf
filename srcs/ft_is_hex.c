@@ -6,11 +6,11 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 18:08:26 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 18:24:37 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 18:38:51 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_is_hex(const char format, va_list arg)
 {
