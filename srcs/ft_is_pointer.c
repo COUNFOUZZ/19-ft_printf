@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 19:33:57 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 19:53:12 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 20:21:26 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_is_pointer(va_list arg)
 {
-	unsigned int	nb;
+	unsigned long	nb;
 	int				count;
 
 	if (!arg)
