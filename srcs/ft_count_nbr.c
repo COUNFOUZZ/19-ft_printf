@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 18:20:03 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 20:40:48 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 20:50:48 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	ft_count_unsigned(unsigned int nb)
 	return (count);
 }
 
-int	ft_count_hex(int nb)
+int	ft_count_hex(unsigned long nb)
 {
 	int	count;
 
