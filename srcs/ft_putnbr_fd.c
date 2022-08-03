@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 17:43:33 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 19:56:16 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 20:37:22 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,17 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	else
 		ft_putchar_fd(nbr + '0', fd);
+}
+
+void	ft_putnbr_unsigned_fd(unsigned int n, int fd)
+{
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+		ft_putchar_fd(n + '0', fd);
 }
 
 void	ft_putnbr_hex_fd(const char format, unsigned int n, int fd)

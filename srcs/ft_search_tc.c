@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 15:36:20 by aabda             #+#    #+#             */
-/*   Updated: 2022/08/03 19:43:35 by aabda            ###   ########.fr       */
+/*   Updated: 2022/08/03 20:34:54 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int	ft_search_tc(const char *format, va_list arg)
 		count += ft_is_string(arg);
 	if (format && format[i + 1] == 'c')
 		count += ft_is_char(arg);
+	if (format && format[i + 1] == 'u')
+		count += ft_is_unsigned(arg);
 	if (format && (format[i + 1] == 'd' || format[i + 1] == 'i'))
 		count += ft_is_int(arg);
 	if (format && (format[i + 1] == 'x' || format[i + 1] == 'X'))
