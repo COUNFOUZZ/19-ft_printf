@@ -6,7 +6,7 @@
 #    By: aabda <aabda@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/03 20:58:10 by aabda             #+#    #+#              #
-#    Updated: 2022/08/04 11:20:31 by aabda            ###   ########.fr        #
+#    Updated: 2022/08/04 14:33:48 by aabda            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ $(NAME): $(OBJS)
 	$(LIB) $@ $^
 
 norm:
-	norminette
+	norminette -R CheckDefine
 
 clean:
 	rm -f $(OBJS)
